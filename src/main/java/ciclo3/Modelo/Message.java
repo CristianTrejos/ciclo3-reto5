@@ -33,7 +33,7 @@ public class Message implements Serializable {
     private Doctor doctor;
 
     @ManyToOne
-    @JoinColumn(name="IdClient")
+    @JoinColumn(name="idClient")
     @JsonIgnoreProperties({"messages", "reservations"})
     private Client client;
 
